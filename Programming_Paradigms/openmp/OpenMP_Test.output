@@ -1,0 +1,10 @@
+Compiling integrate.pyx because it changed.
+[1/1] Cythonizing integrate.pyx
+running build_ext
+building 'integrate' extension
+creating build
+creating build/temp.linux-x86_64-2.7
+gcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/pawsey/sles12sp2/apps/gcc/4.8.5/python/2.7.13/include/python2.7 -c integrate.c -o build/temp.linux-x86_64-2.7/integrate.o -fopenmp -O3 -mfma -mavx
+gcc -pthread -shared build/temp.linux-x86_64-2.7/integrate.o -o /home/mcheeseman/ADACS/programming_paradigms/openmp/integrate.so -fopenmp -O3 -mfma -mavx
+Computed integral of f was 2.4999999
+Analytical solution was 2.5

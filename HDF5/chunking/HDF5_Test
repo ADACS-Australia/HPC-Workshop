@@ -1,0 +1,35 @@
+
+ Dimensionality and Chunking Check
+-----------------------------------
+  Chunked Dataset
+     overall dimensions :  (4000, 4000)
+     chunk dimensions   :  (200, 200)
+ 
+  Non-compressed Dataset
+     overall dimensions :  (4000, 4000)
+     chunk dimensions   :  None
+ 
+
+ Contiguous Dataset Read Times
+-------------------------------
+  chunked     : 0.062083 sec
+  non-chunked : 0.028211 sec
+
+
+ Non-contiguous Dataset Read Times
+-----------------------------------
+  chunked     : 3.432100 sec
+  non-chunked : 27.405827 sec
+
+
+ Chunk cache sizes (bytes)
+---------------------------
+ before modification :  1048576
+ after modification  :  4194304
+
+
+ Non-contiguous Dataset Read Times
+-----------------------------------
+  chunked     : 2.212509 sec
+  non-chunked : 27.279504 sec
+

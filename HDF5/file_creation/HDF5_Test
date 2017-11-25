@@ -1,0 +1,5 @@
+Length of our dataset is  1500
+Datatype of our dataset is  float32
+dataset is described as  an 1D array of random floats
+[ 0.60457969  0.48888701  0.05072832 ...,  0.65455091  0.16019106
+  0.34532806]

@@ -1,0 +1,72 @@
+
+------------------- NEW DIRECTORY -------------------
+
+ 
+stripe_count:   4 stripe_size:    131072
+18432+0 records in
+18432+0 records out
+19327352832 bytes (19 GB, 18 GiB) copied, 16.9604 s, 1.1 GB/s
+
+real	0m16.962s
+user	0m0.004s
+sys	0m14.882s
+
+------------------- NEW DIRECTORY -------------------
+
+ 
+stripe_count:   4 stripe_size:    262144
+18432+0 records in
+18432+0 records out
+19327352832 bytes (19 GB, 18 GiB) copied, 19.7911 s, 977 MB/s
+
+real	0m19.793s
+user	0m0.004s
+sys	0m14.223s
+
+------------------- NEW DIRECTORY -------------------
+
+ 
+stripe_count:   4 stripe_size:    524288
+18432+0 records in
+18432+0 records out
+19327352832 bytes (19 GB, 18 GiB) copied, 16.5831 s, 1.2 GB/s
+
+real	0m16.585s
+user	0m0.012s
+sys	0m13.799s
+
+------------------- NEW DIRECTORY -------------------
+
+ 
+stripe_count:   4 stripe_size:    1048576
+18432+0 records in
+18432+0 records out
+19327352832 bytes (19 GB, 18 GiB) copied, 16.7669 s, 1.2 GB/s
+
+real	0m16.768s
+user	0m0.004s
+sys	0m14.124s
+
+------------------- NEW DIRECTORY -------------------
+
+ 
+stripe_count:   4 stripe_size:    2097152
+18432+0 records in
+18432+0 records out
+19327352832 bytes (19 GB, 18 GiB) copied, 14.9447 s, 1.3 GB/s
+
+real	0m14.946s
+user	0m0.020s
+sys	0m13.661s
+
+------------------- NEW DIRECTORY -------------------
+
+ 
+stripe_count:   4 stripe_size:    4194304
+18432+0 records in
+18432+0 records out
+19327352832 bytes (19 GB, 18 GiB) copied, 16.7037 s, 1.2 GB/s
+
+real	0m16.705s
+user	0m0.012s
+sys	0m13.875s
