@@ -1,0 +1,6 @@
+TO BUILD THE SOULTION: 
+make 
+
+
+TO RUN THE SOLUTION:
+sbatch jobscript-template.slurm

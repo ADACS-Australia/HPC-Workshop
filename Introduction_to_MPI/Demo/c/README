@@ -1,0 +1,3 @@
+Running the matrix multiplication requires setting the size of the square matrix n x n  and the file in which the input data is:
+
+aprun -n NUM_TASKS ./executable -n NUM_ELEMENTS_IN_ROW -f PATH_TO_INPUT_FILE

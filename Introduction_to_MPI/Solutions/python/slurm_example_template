@@ -1,0 +1,28 @@
+#!/bin/bash --login
+# SLURM directives
+#SBATCH --ntasks=4
+#SBATCH --time=00:15:00
+#SBATCH --account=pawsey0001
+#SBATCH --export=NONE
+
+##
+## Set the MPI environment
+##-------------------------------
+export OMP_NUM_THREADS=0
+export MV2_ENABLE_AFFINITY=0
+export MV2_USE_THREAD_WARNING=0
+
+##
+## Load the python environment 
+##---------------------------------
+module load broadwell mpi4py numpy
+
+##
+## Change to the appropriate working directory
+##---------------------------------------------
+cd <my_working_directory>
+
+##
+## Run the oython script 
+##-----------------------
+srun -n 4 python <script_name>
