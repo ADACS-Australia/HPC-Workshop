@@ -1,12 +1,11 @@
 #!/bin/bash
 #SBATCH --job-name=NumOSTsTest
 #SBATCH --output=LustreTest_VaryingNumOSTs
-#SBATCH --partition=debugq
-#SBATCH -C tesla
+#SBATCH --partition=gpuq
 #SBATCH --nodes=1
 #SBATCH --time=00:10:00
-#SBATCH --account=pawsey0001
-##SBATCH --reservation=adacs
+#SBATCH --account=courses01
+#SBATCH --reservation=adacs
 #SBATCH --export=NONE
 
 ##
@@ -25,4 +24,4 @@ cd ${MYSCRATCH}
 ## Run the Python script
 ##-----------------------
 
-srun --export=ALL -n 1 python ${HOME}/ADACS/lustre/lustre_num_ost_test.py 
+srun --export=ALL -n 1 python ${HOME}/HPC-Workshop/Lustre/lustre_num_ost_test.py 

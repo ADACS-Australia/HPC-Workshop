@@ -30,4 +30,4 @@ cd ${MYSCRATCH}
 ## Run the Python script
 ##-----------------------
 
-srun --export=ALL -n 4 python ${HOME}/ADACS/programming_paradigms/mpi/numerical_integration_mpi.py 
+srun --export=ALL -n 4 python ${HOME}/HPC-Workshop/Programming_Paradigms/mpi/numerical_integration_mpi.py 

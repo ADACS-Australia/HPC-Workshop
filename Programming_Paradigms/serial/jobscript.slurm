@@ -24,4 +24,4 @@ cd ${MYSCRATCH}
 ## Run the Python script
 ##-----------------------
 
-srun --export=ALL -n 1 python ${HOME}/ADACS/programming_paradigms/serial/numerical_integration_serial.py 
+srun --export=ALL -n 1 python ${HOME}/HPC-Workshop/Programming_Paradigms/serial/numerical_integration_serial.py 

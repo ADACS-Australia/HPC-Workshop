@@ -28,4 +28,4 @@ cd ${MYSCRATCH}
 ## Run the Python script
 ##-----------------------
 
-srun --export=ALL -n 4 python ${HOME}/ADACS/hdf5/parallel/parallel_hdf5.py 
+srun --export=ALL -n 4 python ${HOME}/HPC-Workshop/HDF5/parallel/parallel_hdf5.py 
