@@ -1,24 +1,21 @@
-CC=cc
-F90=ftn
-PRGENV=${PE_ENV}
-CFLAGS=-g
-SOURCE=pi-omp-v2.c
-OBJ=pi-omp-v2.o
-EXE=pi-omp-v2.out
-
-ifeq ($(PRGENV),INTEL)
-	OMP_FLAG=-openmp
-else ifeq ($(PRGENV),GNU)
-	OMP_FLAG=-fopenmp
-else ifeq ($(PRGENV),CRAY)
-	OMP_FLAG=-homp
-endif 
+ifeq ($(CRAYOS_VERSION),)
+	CC=gcc
+	MPICC=mpicc
+	F90=gfortran
+	MPIF90=mpif90
+else
+	CC=cc
+	F90=ftn
+	MPICC=cc
+	MPIF90=ftn
+endif
+OMP_FLAG=-fopenmp
+FFLAGS=-g $(OMP_FLAG) -fno-range-check
 
 
-%.o: %.c 
-	$(CC) -c -o $@ $< $(CFLAGS) $(OMP_FLAG)
-pi-omp-v2: $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(EXE) $(OMP_FLAG)
+all: pi-omp-v2
 
+pi-omp-v2:
+	$(FC) $(FFLAGS) pi-omp-v2.f90 -o pi-omp-v2
 clean:
-	rm -rf $(EXE) $(OBJ)
+	rm -rf  pi-omp-v2
