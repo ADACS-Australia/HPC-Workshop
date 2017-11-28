@@ -24,4 +24,4 @@ cd ${MYSCRATCH}
 ## Run the Python script
 ##-----------------------
 
-srun --export=ALL -n 1 python ${HOME}/ADACS/hdf5/chunking/chunked_dataset.py 
+srun --export=ALL -n 1 python ${HOME}/HPC-Workshop/HDF5/chunking/chunked_dataset.py 
