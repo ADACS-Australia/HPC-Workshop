@@ -10,9 +10,10 @@
 export WORK_DIR=$MYSCRATCH/MPIIO
 mkdir -p $WORK_DIR
 cd $WORK_DIR
-cp ~/HPC-Workshop/Introduction_to_MPIIO/strided_read .
+cp ~/HPC-Workshop/Introduction_to_MPIIO/simple_write .
 module use /group/courses01/software/sles12sp2/modulefiles
-module load broadwell gcc/5.4.0 
+module load broadwell gcc/5.4.0
 module load mvapich
 
 srun -n 4 --export=all ./simple_write
+
